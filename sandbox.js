@@ -1,28 +1,24 @@
-let age = 25;
-let radius = 10;
-const pi = 3.14;
+//template strings
 
-//console.log(radius, pi);
-// math operators +, -, *, /, **, %
+const title = " Best reads of 2019";
+const author = "Mario";
+const likes = 30;
 
-// console.log(10 / 2);
+//  concatenation way
+// let result =
+// 	" the blog called " + title + " by " + author + " has " + likes + " likes ";
 
-// let result = radius % 3;
+//TEMPLATE STRING WAY
 
-// let result = pi * radius ** 2;
+let result = `The blog called ${title} by ${author} has ${likes} likes`;
+console.log(result);
 
-// (**2 = ao quadrado, **3 = elevado à terceira )
-// console.log(result);
+// creating Html templates
 
-let likes = 10;
+let html = `
+<h2> ${title} </h2>
+<p>${author}</p>
+<span>This blog has ${likes} likes</span>
+`;
 
-// likes = likes + 1;
-// likes++
-//likes--;
-// likes -= 5;
-// likes /= 5;
-// likes *= 2;
-
-//NaN - not a number
-
-console.log(likes);
+console.log(html);
