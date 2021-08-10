@@ -22,21 +22,3 @@ const getCity = async (city) => {
 	return data[0];
 };
 
-getCity("petrolina")
-	// model 1
-	// .then((data) => console.log(data))
-	// .catch((err) => console.log(err));
-
-	// model 2
-
-	.then((data) => {
-		return getWeather(data.Key);
-	})
-	.then((data) => {
-		console.log(data);
-	})
-	.catch((err) => console.log(err));
-
-// getWeather("34950");
-// .then((data) => console.log(data))
-// .catch((err) => console.log(err));
